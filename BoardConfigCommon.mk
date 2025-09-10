@@ -25,5 +25,8 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_COMMON_PATH)/vendor.prop
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_COMMON_PATH)/biometrics/sepolicy
+
 # Inherit from the proprietary version
 include vendor/xiaomi/titanium-common/BoardConfigVendor.mk
