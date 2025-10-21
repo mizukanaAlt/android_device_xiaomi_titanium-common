@@ -10,7 +10,7 @@ include device/xiaomi/mithorium-common/BoardConfigCommon.mk
 DEVICE_COMMON_PATH := device/xiaomi/titanium-common
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_COMMON_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
