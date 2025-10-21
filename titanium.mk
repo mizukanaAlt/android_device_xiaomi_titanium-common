@@ -7,6 +7,10 @@
 # Inherit from mithorium-common
 $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8953
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
