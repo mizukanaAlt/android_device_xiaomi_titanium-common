@@ -1,0 +1,1 @@
+PRODUCT_DEFAULT_DEV_CERTIFICATE := $(DEVICE_COMMON_PATH)/lineage-priv/keys/releasekey
