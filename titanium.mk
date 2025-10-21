@@ -11,6 +11,10 @@ $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
 PRODUCT_PACKAGES += \
     camera.msm8953
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
