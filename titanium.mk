@@ -7,10 +7,6 @@
 # Inherit from mithorium-common
 $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
 
-# Audio configuration
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8953
